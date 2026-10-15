@@ -5,8 +5,8 @@ Aplicación React creada con Vite, empaquetada en una imagen Docker de dos etapa
 Cada `push` a la rama `main` ejecuta GitHub Actions, construye la imagen y la publica automáticamente en Docker Hub como:
 
 ```text
-karitoziss/practica-react-oci:latest
-karitoziss/practica-react-oci:<SHA-del-commit>
+karitoziss/mi-web-plana:latest
+karitoziss/mi-web-plana:<SHA-del-commit>
 ```
 
 ## Desarrollo local
@@ -28,12 +28,12 @@ Abrir `http://localhost` o la IP pública de la máquina virtual.
 ## Ejecutar desde Docker Hub en la VM
 
 ```bash
-docker pull karitoziss/practica-react-oci:latest
+docker pull karitoziss/mi-web-plana:latest
 docker run -d \
   --name practica-react \
   --restart unless-stopped \
   -p 80:80 \
-  karitoziss/practica-react-oci:latest
+  karitoziss/mi-web-plana:latest
 ```
 
 ## Configuración requerida en GitHub
